@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "blovkchair",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blovkvhair-favicon.png",
+    "mbrsiteDomain": "njeqkjvfn4",
+    "imageResize": false,
+    "usedWebp": false,
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://blovkchair.github.io/",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://blovkchair.github.io/sitemap.xml/",
+    "uniqCompNum": 4,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blockchair - Multi Blockchain Explorer | Home",
+        "meta_descr": "Blockchair is a multi-blockchain explorer and analytics platform that provides transparent, privacy-focused access to on-chain data across Bitcoin, Ethereum, and other major networks.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blockchair.com/\"><img src=\"@PROJECT_PATH@/assets/images/blockchairr.png\" alt=\"blockchair\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vakHNvvxRi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>- Multi Blockchain Explorer | Home</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>: A Comprehensive Blockchain Explorer and Analytics Platform</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>is a popular blockchain explorer and analytics platform designed to provide transparent, detailed access to data across multiple blockchain networks. It serves developers, researchers, traders, journalists, and everyday crypto users who want to explore blockchain activity without running their own nodes or dealing with raw data.<br><br>What Is <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>?<br><br>At its core, Blockchair<b>&nbsp;&nbsp;</b>is a <b>multi-blockchain explorer</b>. Unlike traditional explorers that focus on a single network, <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>supports numerous blockchains in one interface, including Bitcoin, Ethereum, Litecoin, Bitcoin Cash, Dogecoin, and several others. This multi-chain approach makes it especially useful for users who operate across different ecosystems.<br><br><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>allows users to search and analyze blocks, transactions, addresses, smart contracts, and on-chain statistics using a simple web interface or advanced APIs.<br><br><b>Key Features :-<br></b><br><b>1. Advanced Search and Filtering :-<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>is known for its powerful search functionality. Users can perform complex queries—such as finding transactions above a certain value, filtering by time range, or identifying specific script types—without writing code. This makes deep blockchain analysis accessible to non-developers.<br><br><b>2. Cross-Blockchain Analytics :-<br></b>The platform offers detailed charts and metrics, including transaction volumes, fees, block sizes, and network activity. By presenting standardized data across multiple blockchains, Blockchair enables easy comparison between networks.<br><br><b>3. Privacy-Oriented Tools :-<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>emphasizes user privacy. The website can be accessed via Tor, does not require user accounts for basic use, and avoids unnecessary tracking. This focus aligns with the broader privacy values of the cryptocurrency community.<br><br><b>4. API and Developer Tools :-<br></b>For developers and businesses, <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>provides APIs that deliver structured blockchain data for applications, dashboards, and research. These APIs are commonly used in wallets, analytics platforms, and compliance tools.<br><br><b>5. Address and Transaction Insights :-<br></b>Users can explore address balances, transaction histories, and token holdings. On account-based chains, <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>also displays smart contract interactions and token transfers, helping users understand how funds move through decentralized applications.<br><br><b>Who Uses <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>?<br></b><br><b>. </b>Developers use it to debug transactions and monitor smart contracts.<br><br><b>. </b>Traders and analysts rely on it for on-chain insights and market signals.<br><br><b>. </b>Journalists and researchers use it to verify blockchain activity and trace fund movements.<br><br><b>. </b>Everyday users check transaction confirmations and wallet balances.<br><br><b>Why <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a>Matters<br></b><br>Transparency is a foundational principle of blockchain technology, but raw blockchain data is complex and difficult to interpret. Blockchair bridges this gap by transforming public ledger data into readable, searchable, and actionable information. Its multi-chain support and emphasis on privacy make it stand out among blockchain explorers.<br><br><b>Conclusion<br></b><br><b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair </a></b>plays a crucial role in the blockchain ecosystem by making decentralized networks more understandable and accessible. Whether you are verifying a single transaction or conducting large-scale on-chain research, Blockchair provides the tools needed to explore blockchain data with clarity and confidence.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vakHOjFpEJ",
+          "_anchor": "article07-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
